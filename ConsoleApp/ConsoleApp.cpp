@@ -4,7 +4,6 @@
 int main(int argc, char * argv[]) {
 	Py_Initialize();
 
-	PySys_SetPath(L"C:\\Users\\Gleb\\source\\repos\\PythonFirstAssignment\\PythonFirstAssignment");
 	PyObject * myModule = PyImport_ImportModule("multiply");
 	PyErr_Print();
 	if (myModule == NULL) {
